@@ -1,59 +1,441 @@
-// These are the styles to make some of the templates look extra nice.
-// Feel free to remove these styles for production!
-
-// Body Styles 
+html,
 body,
-html, 
 .body {
-  background: #f3f3f3 !important;
+  background: #e4e5ea;
+  background-color: #e4e5ea;
+  padding-bottom: 300px;
 }
 
-.container.header {
-  background: #f3f3f3;
-}
-
-.body-drip {
-  border-top: 8px solid #663399;
-}
-
-// Full Width Headers
 .header {
-  background: #8a8a8a;
+  background: $primary-color;
+  background-color: $primary-color;
+
+  .columns {
+    padding-bottom: 20px;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    padding-top: 20px;
+
+    .logo_white {
+      width: 128px;
+    }
+
+    .user_icon {
+      width: 32px;
+    }
+  }
 }
 
-.header .columns {
-  padding-bottom: 0;
+.sub-header {
+  background: #d65700;
+  background-color: #d65700;
+
+  .columns {
+    padding-bottom: 5px;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    padding-top: 5px;
+
+    a {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+
+      .icons {
+        width: 20px;
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+    }
+
+    th {
+      text-align: center;
+    }
+
+    .menu-divider {
+      display: block;
+      height: 20px;
+      width: 1px;
+      background: #ff6a10;
+      background-color: #ff6a10;
+    }
+  }
 }
 
-.header p {
-  color: #fff;
-  padding-top: 15px;
+.deal_of_day {
+  background: #14191e;
+  background-color: #14191e;
+
+  .columns {
+    th {
+      padding-top: 30px;
+      padding-top: 20px;
+    }
+  }
+
+  img {
+    padding-bottom: 20px;
+  }
+
+  h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+
+    &.save_amount {
+      font-size: 14px;
+    }
+
+    &.tiny_info {
+      font-size: 10px;
+      font-weight: 300;
+      padding-bottom: 10px;
+    }
+
+    &.price {
+      font-size: 20px;
+      font-weight: 600;
+      padding-bottom: 10px;
+    }
+  }
+
+  .button {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
 }
 
-.header .wrapper-inner {
-  padding: 20px;
+.content-area {
+  background: #f1f4f7;
+  background-color: #f1f4f7;
+
+  &>tbody>tr>th {
+    padding-top: 0;
+  }
+
+  .first-offer {
+    padding-top: 16px;
+  }
+
+  .offer {
+    background: #ffffff;
+    background-color: #ffffff;
+
+    .columns {
+      th {
+        padding-top: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      &>table {
+        max-width: 568px;
+        table-layout: fixed;
+      }
+    }
+
+    img {
+      padding-bottom: 20px;
+    }
+
+    p {
+      color: #334755;
+      font-weight: 600 !important;
+      font-size: 16px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    span {
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+      display: block;
+
+      &.save_amount {
+        font-size: 14px;
+        color: #278ef3;
+      }
+
+      &.tiny_info {
+        font-size: 10px;
+        font-weight: 500;
+        padding-bottom: 10px;
+        color: #334755;
+      }
+
+      &.price {
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 10px;
+        color: #334755;
+      }
+    }
+
+    .button {
+      background: #14191e;
+      background-color: #14191e;
+      display: block;
+      width: 150px;
+      text-align: center;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      color: #fff;
+      margin: 0 auto;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &.last-offer {
+      .group-icons {
+        width: 190px;
+        margin: 0 auto;
+        padding-bottom: 0;
+      }
+    }
+
+    h4 {
+      color: #334755;
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    p {
+      color: #334755;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  }
 }
 
-.header .container {
-  background: transparent;
+.footer-top {
+  background: #222d37;
+  background-color: #222d37;
+  color: #ffffff;
+
+  &>tbody>tr {
+    vertical-align: middle;
+  }
+
+  &>tbody>tr>th {
+    padding-bottom: 25px !important;
+    padding-top: 30px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  th {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .circle-logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .call-to-action {
+    display: block;
+    font-size: 14px;
+    hyphens: none;
+    color: #ffffff;
+    padding-left: 10px;
+  }
+
+  .info {
+    display: block;
+    font-size: 12px;
+    hyphens: none;
+    color: #ffffff;
+    padding-left: 10px;
+  }
+
+  .info-section>table>tbody>tr>th {
+    padding-left: 10px;
+    color: #ffffff !important;
+  }
+
+  .store-logos {
+    img {
+      height: 40px;
+      display: block;
+      margin: 0 auto;
+      width: 120px;
+    }
+
+    &>table>tbody>tr>th>table>tbody>tr>th {
+      padding-bottom: 5px;
+    }
+  }
 }
 
-// Social Media
-table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
+.footer-social {
+  background: #14191e;
+  background-color: #14191e;
+
+  &>tbody>tr>th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  th {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .logo-section {
+    img {
+      width: 128px;
+    }
+  }
+
+  .social-icons {
+    img {
+      width: 32px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }
 
-table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
+.footer-menu {
+  background: #14191e;
+  background-color: #14191e;
+  border-bottom: 1px solid #222d37;
+  border-top: 1px solid #222d37;
+
+  .columns {
+    padding-bottom: 5px;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    padding-top: 5px;
+
+    a {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+
+      .icons {
+        width: 20px;
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+    }
+
+    th {
+      text-align: center;
+    }
+
+    .menu-divider {
+      display: block;
+      height: 20px;
+      width: 1px;
+      background: #222d37;
+      background-color: #222d37;
+    }
+  }
 }
 
-table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
-}
+.footer-bottom {
+  background: #14191e;
+  background-color: #14191e;
 
-.wrapper.secondary {
-  background: #f3f3f3;
+  &>tbody>tr>th {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-top: 30px !important;
+    padding-bottom: 30px;
+  }
+
+  .lower-links {
+    &>tbody>tr>th>table>tbody>tr>th {
+      text-align: center;
+    }
+
+    a {
+      font-size: 12px;
+      color: #ffffff;
+      margin-right: 10px;
+      font-weight: 600;
+
+      &:nth-child(4) {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .privacy {
+    th {
+      padding-bottom: 0;
+    }
+
+    &>tbody>tr>th>table>tbody>tr>th {
+      padding-bottom: 30px;
+    }
+
+    p {
+      color: #8c8e90;
+      font-size: 10px;
+    }
+  }
+
+  .copyright,
+  .address {
+    th {
+      padding-bottom: 0;
+    }
+
+    .columns {
+      &>table>tbody>tr>th {
+        color: #b7b8b9;
+        font-size: 12px;
+        font-weight: 500;
+        padding-bottom: 0;
+      }
+    }
+  }
 }

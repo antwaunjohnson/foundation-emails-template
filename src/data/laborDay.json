@@ -1,0 +1,20 @@
+{
+  "title": "40% off on labor day",
+  "products": [
+    {
+      "title": "Yeezy 720 Bboost",
+      "price": 400,
+      "image_url": "https://images.stockx.com/360/adidas-Yeezy-Boost-700-Analog/Images/adidas-Yeezy-Boost-700-Analog/Lv2/img01.jpg?fm=webp&auto=compress&w=576&dpr=1&updated_at=1688628447&h=384&q=57 1x"
+    },
+    {
+      "title": "Air Jordan 11 CMFT Low",
+      "price": 200,
+      "image_url": "https://images.stockx.com/images/Air-Jordan-11-CMFT-Low-White-Varsity-Red.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;fm=webp&amp;auto=compress&amp;dpr=1&amp;trim=color&amp;updated_at=1695757292&amp;q=57"
+    },
+    {
+      "title": "Nike Air Max Pulse",
+      "price": 150,
+      "image_url": "https://images.stockx.com/360/Nike-Air-Max-720-Obsidian-Blue-Fury/Images/Nike-Air-Max-720-Obsidian-Blue-Fury/Lv2/img20.jpg?fm=webp&amp;auto=compress&amp;w=576&amp;dpr=1&amp;updated_at=1628050934&amp;h=384&amp;q=57"
+    }
+  ]
+}
